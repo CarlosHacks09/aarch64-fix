@@ -32,5 +32,5 @@ read -n1 -r -p "Would you like to reboot now (y/N)? " reboot_choice
 if [[ "$reboot_choice" =~ ^[Yy]$ ]]; then
   sudo reboot
 else
-  echo "Reboot skipped."
+  exit
 fi
